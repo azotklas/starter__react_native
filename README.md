@@ -12,7 +12,7 @@ Go to /ios and run:
 pod install
 ```
 
-## 1 Tab: Start Metro (packager)
+## First tab: Start Metro (Packager)
 
 > Вам может потребоваться сбросить или очистить кеш упаковщика React Native.
 > Для этого вы можете передать стартовому скрипту флаг --reset-cache
@@ -21,16 +21,33 @@ pod install
 npx react-native start --reset-cache
 ```
 
-## 2 Tab: Run App
+## Second Tab: Run App
+
+How to run ANDROID:
+Before starting the APP, you must open the project (./android) in the Android Studio and run any emulator
 
 ```sh
 npx react-native run-android
 ```
 
-or
+How to run IOS:
 
 ```sh
 npx react-native run-ios
+```
+
+## Cleaning
+
+ios
+
+```sh
+cd ios && xcodebuild clean && cd ../
+```
+
+android
+
+```sh
+cd android && ./gradlew clean && cd ../
 ```
 
 ## License
